@@ -1,16 +1,29 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.AlexToolActionBar" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--<style name="Base.Theme.AlexToolActionBar" parent="Theme.AppCompat.Light.NoActionBar">-->
+   <!--<style name="Base.Theme.AlexToolActionBar" parent="Theme.AppCompat.Light.DarkActionBar">-->
         <!-- Customize your light theme here. -->
-        <!--<item name="colorPrimary">@color/my_light_primary</item>-->
-        <item name="colorPrimary">@color/mycolor</item>
+        <item name="colorPrimary">@color/my_light_primary</item>
+        <!--<item name="colorPrimary">@color/error_color_material_light</item>-->
+        <!--<item name="colorPrimaryDark">@color/my_dark_primary</item>-->
+        <item name="colorPrimaryDark">@color/material_deep_teal_500</item>
         <item name="windowActionBar">true</item>
+        <!--<item name="android:windowBackground">@color/my_light_primary</item>-->
         <item name="windowNoTitle">false</item>
+
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="actionBarSize">75dp</item>
+        <item name="titleTextColor">@color/black</item>
+        <item name="android:titleTextStyle">@style/Base.Theme.AlexToolActionBar</item>
+
+        <!--<item name="actionBarTheme">@string/app_name</item>-->
+
         <item name="android:windowFullscreen">false</item>
     </style>
 
     <style name="Theme.AlexToolActionBar" parent="Base.Theme.AlexToolActionBar"
         />
-
-    <color name="my_light_primary">#0C2D4D</color>
 </resources>
